@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class=" bg-[#cddde4] pt-5" id="body">
+    <header class=" max-w-screen-xl mx-auto">
+        <nav class=" bg-white flex justify-between p-4 rounded-lg ">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-3xl">DEV<span class="text-3xl font-bold">Board</span>
+                </h1>
+            </div>
+            <div class="flex items-center gap-10">
+                <div class="bg-[#cddde4] flex items-center gap-4 p-3 rounded-3xl">
+                    <img class="h-6" src="assets/checkbox.png" alt="">
+                    <p id="task-done" class="font-bold text-xl">22</p>
+                </div>
+                <img id="bg" class="bg-[#cddde4] p-2 rounded-full" src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main" class="bg-[#cddde4] max-w-screen-xl mx-auto py-8 gap-6 grid grid-cols-4">
+
+        <section class="bg-white col-span-3 p-4 pt-0 max-w-screen-xl mx-auto grid grid-rows-4 grid-cols-3 rounded-xl">
+
+            <section class="row-span-1 col-span-3 grid grid-cols-4 my-6  mb-12 gap-8 ">
+
+                <div class="flex items-center bg-[#cddde4] px-3 gap-3 rounded-lg">
+                    <img class="p-2 rounded-full bg-white" src="assets/checkbox.png" alt="">
+                    <div>
+                        <p>Task assigned</p>
+                        <p id="task-remain" class="text-2xl font-semibold">06</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#6C7FFA] col-span-2 px-3 gap-3 flex items-center rounded-lg">
+                    <img src="assets/board.png" alt="">
+                    <p class="text-xl text-white">Discover Something New Today!</p>
+                </div>
+
+                <div class="flex items-center gap-3 px-3 rounded-lg bg-[#cddde4]">
+                    <img class="p-2 rounded-full bg-white" src="assets/calender.png" alt="">
+                    <div>
+                        <p id="day">Wed</p>
+                        <p id="date" class="font-bold"></p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section class="row-span-3 col-span-3 grid grid-cols-3 grid-rows-2 gap-6">
+
+                <div class="bg-[#cddde4] p-4 rounded-2xl">
+                    <div class="border-b-2 mb-4 border-dashed border-slate-400 ">
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">ShopEase</p>
+                        <p id="t1-tag" class="font-medium text-xl mb-4">Fix Mobile Button Issue </p>
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Debug using Chrome DevTools, check for
+                            overlapping element...</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-light">deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button id="t1-btn" class="p-2 bg-blue-600 rounded-lg text-white">Completed</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#cddde4] p-4 rounded-2xl">
+                    <div class="border-b-2 mb-4 border-dashed border-slate-400 ">
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">CloudSync</p>
+                        <p id="t2-tag"  class="font-medium text-xl mb-4">Add Dark Mode </p>
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Store the user's preference in
+                            localStorage, update CSS...</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-light">deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button id="t2-btn"  class="p-2 bg-blue-600 rounded-lg text-white">Completed</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#cddde4] p-4 rounded-2xl">
+                    <div class="border-b-2 mb-4 border-dashed border-slate-400 ">
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Swiftpay</p>
+                        <p id="t3-tag"  class="font-medium text-xl mb-4">Optimize Home page </p>
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Debug using Chrome DevTools, check for
+                            overlapping element...</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-light">deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button id="t3-btn"  class="p-2 bg-blue-600 rounded-lg text-white">Completed</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#cddde4] p-4 rounded-2xl">
+                    <div class="border-b-2 mb-4 border-dashed border-slate-400 ">
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Meta</p>
+                        <p id="t4-tag"  class="font-medium text-xl mb-4">Add new emoji 🤲</p>
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Debug using Chrome DevTools, check for
+                            overlapping element...</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-light">deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button id="t4-btn"  class="p-2 bg-blue-600 rounded-lg text-white">Completed</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#cddde4] p-4 rounded-2xl">
+                    <div class="border-b-2 mb-4 border-dashed border-slate-400 ">
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Google LLC</p>
+                        <p id="t5-tag"  class="font-medium text-xl mb-4">Integrate OpenAI API </p>
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Debug using Chrome DevTools, check for
+                            overlapping element...</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-light">deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button id="t5-btn"  class="p-2 bg-blue-600 rounded-lg text-white">Completed</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#cddde4] p-4 rounded-2xl">
+                    <div class="border-b-2 mb-4 border-dashed border-slate-400 ">
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Glassdoar</p>
+                        <p id="t6-tag"  class="font-medium text-xl mb-4">Improve Job searching</p>
+                        <p class="p-2 mb-4 bg-white inline-block rounded-lg">Debug using Chrome DevTools, check for
+                            overlapping element...</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="font-light">deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button id="t6-btn"  class="p-2 bg-blue-600 rounded-lg text-white">Completed</button>
+                    </div>
+                </div>
+            </section>
+
+            
+        </section>
+        <section class="bg-white  rounded-xl">
+          
+             <div class="flex flex-col items-center gap-3 py-8 border-b-2 mb-4 border-dashed border-slate-400 ">
+                <div class="flex gap-2">
+                    <img src="assets/activity.png" alt="">
+                    <p>Activity log</p>
+                </div>
+                <button id="history-btn" class="py-2 px-4 bg-blue-600 rounded-lg text-white bor">Clear History</button>
+            </div>
+            <div id="History">
+
+            </div>
+    </section>
+    </main>
+    <script src="script/utilities.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
